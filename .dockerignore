@@ -1,0 +1,6 @@
+.*env*
+Dockerfile
+LICENSE
+README.md
+.idea
+.git*
