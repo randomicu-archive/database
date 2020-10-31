@@ -1,0 +1,29 @@
+name: Build database docs
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'schema/*.dbml'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - run: npm install -g dbdocs
+    
+    - shell: bash
+      env:
+        DBDOCS_AUTH: ${{ secrets.DBDOCS_AUTH }}
+      run: echo "$DBDOCS_AUTH" > ~/.netrc
+    
+    - run: dbdocs build ./schema/randomicu.dbml
