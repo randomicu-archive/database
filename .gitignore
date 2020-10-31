@@ -106,5 +106,8 @@ venv.bak/
 # Jetbrains
 .idea/
 
+# Visual Studio Code
+.vscode/
+
 # Example files
 **/example
