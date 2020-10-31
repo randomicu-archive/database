@@ -10,7 +10,7 @@ database_type: 'PostgreSQL'
 note: '''
 # Randomicu Database
 
-Statistics from Randomicu and Fakedata apps
+Events from Randomicu and Fakedata apps
 '''
 }
 
