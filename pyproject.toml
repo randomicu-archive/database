@@ -7,7 +7,7 @@ license = "Unlicense"
 
 [tool.poetry.dependencies]
 python = "3.9"
-yoyo-migrations = "^7.2.0"
+yoyo-migrations = "^7.2.1"
 psycopg2-binary = "^2.8.6"
 
 [tool.poetry.dev-dependencies]
