@@ -6,7 +6,7 @@ authors = ["pythoninja"]
 license = "Unlicense"
 
 [tool.poetry.dependencies]
-python = "3.9"
+python = "^3.9"
 yoyo-migrations = "^7.3.1"
 psycopg2-binary = "^2.8.6"
 
