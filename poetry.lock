@@ -27,7 +27,7 @@ widechars = ["wcwidth"]
 
 [[package]]
 name = "yoyo-migrations"
-version = "7.3.1"
+version = "7.3.2"
 description = "Database migrations with SQL"
 category = "main"
 optional = false
@@ -44,8 +44,8 @@ pyodbc = ["pyodbc"]
 
 [metadata]
 lock-version = "1.1"
-python-versions = "3.9"
-content-hash = "ac1214528d1a25afb24c6193555cd5982a5d12107055e05103317b807625575e"
+python-versions = "^3.9"
+content-hash = "03296c8369e5e30b6c6d051ddaf59f623691bad91c3b66b8c1815765925fcd89"
 
 [metadata.files]
 psycopg2-binary = [
@@ -94,6 +94,6 @@ tabulate = [
     {file = "tabulate-0.8.7.tar.gz", hash = "sha256:db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"},
 ]
 yoyo-migrations = [
-    {file = "yoyo-migrations-7.3.1.tar.gz", hash = "sha256:24593b5bc25d43f1395843ed9d4605f0227e258706db93bdb31ad5a6f46c8ab3"},
-    {file = "yoyo_migrations-7.3.1-py3-none-any.whl", hash = "sha256:b10324c6206d1f636f85b824f57f141782b873625af3c3077cee95598dacf9e1"},
+    {file = "yoyo-migrations-7.3.2.tar.gz", hash = "sha256:44840828e1a0169f541e702d5aedca8185ada68087e7bad4850a6fc5d71e77a4"},
+    {file = "yoyo_migrations-7.3.2-py3-none-any.whl", hash = "sha256:a6e6bc990732d4951c4e2a5b2815d60fe47a445f1c0d1b3433b9ef5f36bca8df"},
 ]
