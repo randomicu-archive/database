@@ -28,7 +28,7 @@ Enum event_type {
   lorem_lists [note: 'event from Randomicu lorem-lists endpoint']
 }
 
-Table event as S {
+Table event as e {
   event_id int [pk, increment]
   created_at datetime [not null, default: `now()`]
   language varchar(255) [not null]
