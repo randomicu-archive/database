@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - 'schema/*.dbml'
+  workflow_dispatch:
 
 jobs:
   build:
