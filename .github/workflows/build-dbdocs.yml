@@ -6,24 +6,22 @@ on:
       - master
     paths:
       - 'schema/*.dbml'
+  workflow_dispatch:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     
-    - name: Use Node.js 12
-      uses: actions/setup-node@v1
+    - name: Use Node.js 14 (LTS)
+      uses: actions/setup-node@v2
       with:
-        node-version: '12.x'
+        node-version: '14.x'
+        cache: 'npm'
     - run: npm install -g dbdocs
     
-    - shell: bash
+    - name: Update database documentation
       env:
-        DBDOCS_AUTH: ${{ secrets.DBDOCS_AUTH }}
-      run: echo "$DBDOCS_AUTH" > ~/.netrc
-    
+        DBDOCS_TOKEN: ${{ secrets.DBDOCS_TOKEN }}
     - run: dbdocs build ./schema/randomicu.dbml
