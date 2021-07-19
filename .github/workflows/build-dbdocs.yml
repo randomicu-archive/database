@@ -24,4 +24,4 @@ jobs:
     - name: Update database documentation
       env:
         DBDOCS_TOKEN: ${{ secrets.DBDOCS_TOKEN }}
-    - run: dbdocs build ./schema/randomicu.dbml
+      run: dbdocs build ./schema/randomicu.dbml
