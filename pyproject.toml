@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "randomicu-database"
-version = "0.0.1"
+version = "1.0.0"
 description = "Database migration scripts with Yoyo"
 authors = ["pythoninja"]
 license = "Unlicense"
